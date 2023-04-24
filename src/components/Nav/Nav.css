@@ -2,5 +2,20 @@
     /* background-image: url("../../assets/images/logo(1).jpg"); */
     background-repeat: no-repeat;
     margin-left: 20px;
-    margin-right: -460px;
+    margin-right: 25px;
+}
+
+.socialIcons {
+    display: flex;
+    margin-left: 405%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+    .logo {
+        margin-right: auto;
+    }
+    
+    .socialIcons {
+        margin-left: 10%;
+    }
 }
