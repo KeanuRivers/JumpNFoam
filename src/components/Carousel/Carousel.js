@@ -1,45 +1,50 @@
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from "react-bootstrap/Carousel";
+import fun4All from "../../images/fun4All.JPG";
+import genderReveal from "../../images/genderReveal.JPG";
+import nghtFn from "../../images/nghtFn.JPG";
+// import summer from '../../images/summer.PNG';
+import "./Carousel.css";
 
-function CarouselImages() {
+export const CarouselImages = () => {
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
+    <Carousel variant="dark" style={{ paddingTop: "25px" }}>
+      <Carousel.Item interval={6000}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+          src={fun4All}
+          alt="Group party for kids and adults"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5 className="cTitleText">FUN FOR ALL</h5>
+          <p className="cText">Fun for all ages and any occasion.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={6000}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+          src={genderReveal}
+          alt="Gender Reveal Party"
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h5 className="cTitleText" id="gRevealTitle">
+            GENDER REVEAL PARTIES
+          </h5>
+          <p className="cText" id="gRevealText">
+            Fun for any gender reveal parties for your soon-to-be addition.
           </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={6000}>
+        <img
+          className="d-block w-100"
+          src={nghtFn}
+          alt="Neon light night party"
+        />
+        <Carousel.Caption>
+          <h5 className="cTitleText">NIGHT NEON FOAM PARTIES</h5>
+          <p className="cText">Hot summer nights just got a lot cooler.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
-}
-
-export default CarouselImages;
+};

@@ -6,7 +6,7 @@ import logoImg from "../../images/logo.jpg";
 
 export const NavBar = () => {
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="dark" expand="lg" style={{borderBottom: 'solid white'}}>
       <Container>
         <div className="logo">
           <img src={logoImg} alt="Logo" style={{height: '50px'}} />
