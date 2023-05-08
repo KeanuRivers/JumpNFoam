@@ -1,8 +1,19 @@
 .logo {
-    /* background-image: url("../../assets/images/logo(1).jpg"); */
     background-repeat: no-repeat;
     margin-left: 20px;
     margin-right: 25px;
+}
+
+.navText {
+    color: white;
+}
+
+.navText:hover {
+    color: blue;
+}
+
+.navbar-toggler {
+    background-color: white;
 }
 
 .socialIcons {
@@ -10,12 +21,14 @@
     margin-left: 405%;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 720px) {
-    .logo {
-        margin-right: auto;
-    }
-    
+/* Mobile version */
+@media only screen and (min-width: 320px) and (max-width: 720px) { 
     .socialIcons {
-        margin-left: 10%;
+        display: flex;
+        margin-left: 0;
     }
+
+    #facebook {
+        padding-right: 5px;
+    }    
 }
