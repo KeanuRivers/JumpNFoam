@@ -2,14 +2,14 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import logoImg from "../../images/logo(1).jpg";
+import logoImg from "../../images/logo.jpg";
 
 export const NavBar = () => {
   return (
     <Navbar bg="dark" expand="lg">
       <Container>
         <div className="logo">
-          <img src={logoImg} alt="Logo" />
+          <img src={logoImg} alt="Logo" style={{height: '50px'}} />
         </div>
         <Navbar.Brand
           className="navText"
